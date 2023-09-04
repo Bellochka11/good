@@ -15,15 +15,28 @@ public class Truck extends Transport {
         this.isLoaded = isLoaded;
     }
 
+ 
+    public void setValues(float speed, int weight, String color, byte[] coordinate, boolean isLoaded){ //setValues - установка значений
+        super.setValues(speed, weight, color, coordinate);//передаем в родительский метод значения
+        this.isLoaded = isLoaded;
+    }
+
+    //Аннотация, полиморфизм переписываем метод! вызвался метод из родительского класса + из класса трак грузовик загружен
+    @Override
+    protected String getValues() {
+        System.out.println(super.getValues());
+        return getLoaded();
+    }
+
     public void setLoaded(boolean loaded){ //присваивает значение 
         this.isLoaded = loaded;
     }
-    public void getLoaded(){
+    public String getLoaded(){
         if (isLoaded) {
-            System.out.println("Грузовик загружен!");        
+            return "Грузовик загружен!";        
         }
         else {
-            System.out.println("Грузовик не загружен!");
+            return"Грузовик не загружен!";
         }
     }
 }

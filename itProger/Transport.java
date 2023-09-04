@@ -11,13 +11,13 @@ public class Transport {
      public Transport(float speed, int weight, String color, byte[] coordinate) { 
         System.out.println("Объект был создан");
         setValues(speed, weight, color, coordinate);
-        System.out.println(getValues());
+        //System.out.println(getValues());
      }
      //СОЗДАЛИ КОНСТРУКТОР ДЛЯ ГРУЗОВИКА. 2 ПАРАМЕТРА
      public Transport(int weight, byte[] coordinate) { 
         this.weight = weight;//this - значит что я обращаюсь к классу Transport и вытягиваю из него что-либо
         this.coordinate = coordinate;
-        System.out.println(getValues());
+        //System.out.println(getValues());
      }
 
 
