@@ -1,7 +1,10 @@
-package itProger;
+package itProger;//пакет
 //public class Truck extends Transport {} - класс Truck наследует все от класса Transport
 public class Truck extends Transport {
+
     private boolean isLoaded; //isLoaded - загружен ли грузовик
+//создали объект двигатель на основе класса двигатель
+    public Engine engine = new Engine();
 
     //1)СОЗДАЛИ КОНСТРУКТОР ДЛЯ ГРУЗОВИКА. 2 ПАРАМЕТРА
      public Truck(int weight, byte[] coordinate) { 
@@ -39,4 +42,17 @@ public class Truck extends Transport {
             return"Грузовик не загружен!";
         }
     }
+
+    @Override //переписали метод из абстрактного класса транспорт
+    public void moveObject(float speed) {
+        System.out.println("Наш объект движется со скоростью" + speed);
+        
+    }
+    @Override//переписали метод из абстрактного класса
+    public boolean stopObject() {
+        this.speed = 0;
+        return true;
+    }
+
+    
 }
