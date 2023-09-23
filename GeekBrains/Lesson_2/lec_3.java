@@ -7,7 +7,7 @@ import java.util.logging.SimpleFormatter;
 public class lec_3 {
     public static void main(String[] args) {
         // //Использование
-        // Logger logger = Logger.getLogger()
+        //Logger logger = Logger.getLogger();
         // //Уровни важности
         // //INFO, DEBUG, ERROR, WARNING и др.
         // //Вывод
@@ -15,7 +15,7 @@ public class lec_3 {
         // log.addHandler(info);
         // //Формат вывода: структурированный, абы как*
         // XMLFormatter, SimpleFormatter
-        // Logger logger = Logger.getLogger(lec_3.class.getName()); //создали логирование и указали имя класса для него
+        //Logger logger = Logger.getLogger(lec_3.class.getName()); //создали логирование и указали имя класса для него
         // //logger.setLevel(Level.INFO);
         // ConsoleHandler ch = new ConsoleHandler();//создали хэндлер ошибки будут выподать в терминал
         // logger.addHandler(ch);//куда отправляются сообщения
