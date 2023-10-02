@@ -7,7 +7,7 @@ import java.util.List;
 // ListIterator<E> 
 public class lec_4 {
     public static void main(String[] args) {
-        List<Integer> list = List.of(1, 12, 123, 1234, 12345);
+        List<Integer> list = List.of(1, 12, 123, 1234, 12345);//List.of - возвращает неизменяемый список удалять элементы из него нельзя
         for (int item : list) {
             System.out.println(item);
         }
